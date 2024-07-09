@@ -7,8 +7,8 @@ def predict_sofa_score():
     return 1
 
 # Page title
-st.set_page_config(page_title='Sofa Score Prediction', page_icon='🛋️')
-st.title('🛋️ Sofa Score Prediction')
+st.set_page_config(page_title='Sofa Score Prediction', page_icon='👨🏼‍⚕️')
+st.title('👨🏼‍⚕️ Sofa Score Prediction')
 
 with st.expander('About this app'):
     st.markdown('**What can this app do?**')
@@ -28,8 +28,7 @@ with st.sidebar:
     ssofascore = st.number_input('Initial Sofa Score', min_value=0, max_value=20, value=5, step=1)
     
 
-# Predict Sofa Score for the following day
-predicted_deterioration= predict_sofa_score(weight, height, sofascore)
+
 
 # Display predicted Sofa Score
 st.subheader('Predicted Deterioration after 24h ')
