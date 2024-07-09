@@ -25,7 +25,8 @@ with st.sidebar:
     pCO2 = st.number_input('pCO2 (mmHg)', min_value=0.0, max_value=300.0, value=170.0, step=1.0)
     pO2 = st.number_input('pO2 (mmHg)', min_value=0.0, max_value=300.0, value=170.0, step=1.0)
     SaO2 = st.number_input('SaO2 (%)', min_value=0.0, max_value=300.0, value=170.0, step=1.0)
-    24_sofascore = st.number_input('Initial Sofa Score', min_value=0, max_value=20, value=5, step=1)
+    24sofascore = st.number_input('Initial Sofa Score', min_value=0, max_value=20, value=5, step=1)
+    
 
 # Predict Sofa Score for the following day
 predicted_deterioration= predict_sofa_score(weight, height, sofascore)
